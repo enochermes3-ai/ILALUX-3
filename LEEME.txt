@@ -1,0 +1,9 @@
+OBSERVATORIO ILALUX - Proyecto Android
+1. Sube el contenido de esta carpeta a un repositorio de GitHub (incluida .github/workflows/build.yml).
+2. Pestana Actions: se compila sola en unos minutos.
+3. Descarga el artefacto Ilalux-apk, descomprimelo e instala app-debug.apk.
+
+Datos editables (sitio web, telefono, WhatsApp, enlace de Meet, mapa):
+  app/src/main/java/com/ilalux/observatorio/MainActivity.java  (seccion DATOS EDITABLES)
+Textos del boletin y temario:
+  app/src/main/java/com/ilalux/observatorio/Contenido.java

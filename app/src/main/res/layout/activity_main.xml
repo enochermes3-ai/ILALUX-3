@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingBottom="24dp">
+
+        <ImageView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:adjustViewBounds="true" android:scaleType="fitCenter"
+            android:src="@drawable/header_logo"
+            android:contentDescription="Logo Observatorio Ilalux" />
+
+        <TextView android:id="@+id/tvTitulo"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:paddingStart="24dp" android:paddingEnd="24dp"
+            android:text="Explora el universo con nosotros"
+            android:textColor="@color/texto" android:textSize="24sp" android:textStyle="bold" />
+
+        <TextView android:id="@+id/tvSub"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:paddingStart="24dp" android:paddingEnd="24dp"
+            android:text="Divulgación y observación astronómica para todos."
+            android:textColor="@color/texto_suave" android:textSize="15sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardWeb"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="14dp"
+            android:clickable="true" android:focusable="true"
+            app:cardBackgroundColor="@color/azul" app:cardCornerRadius="20dp" app:cardElevation="5dp"
+            app:strokeColor="#2A4580" app:strokeWidth="0dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🌐" android:textSize="34sp" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Sitio web oficial" android:textColor="@color/texto"
+                        android:textSize="19sp" android:textStyle="bold" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="observatorioilalux.wuaze.com" android:textColor="#D6E2FF" android:textSize="14sp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="›" android:textColor="@color/texto" android:textSize="30sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardBoletin"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="14dp"
+            android:clickable="true" android:focusable="true"
+            app:cardBackgroundColor="@color/tarjeta" app:cardCornerRadius="20dp" app:cardElevation="5dp"
+            app:strokeColor="#2A4580" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🔭" android:textSize="34sp" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Boletín astronómico" android:textColor="@color/texto"
+                        android:textSize="19sp" android:textStyle="bold" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Noticias y eventos del cielo" android:textColor="@color/texto_suave" android:textSize="14sp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="›" android:textColor="@color/dorado" android:textSize="30sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTemario"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="14dp"
+            android:clickable="true" android:focusable="true"
+            app:cardBackgroundColor="@color/tarjeta" app:cardCornerRadius="20dp" app:cardElevation="5dp"
+            app:strokeColor="#2A4580" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📚" android:textSize="34sp" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Temario" android:textColor="@color/texto"
+                        android:textSize="19sp" android:textStyle="bold" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Contenido del curso de astronomía" android:textColor="@color/texto_suave" android:textSize="14sp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="›" android:textColor="@color/dorado" android:textSize="30sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardDirector"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="14dp"
+            android:clickable="true" android:focusable="true"
+            app:cardBackgroundColor="@color/tarjeta" app:cardCornerRadius="20dp" app:cardElevation="5dp"
+            app:strokeColor="#2A4580" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="💬" android:textSize="34sp" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Pregúntale al director del observatorio" android:textColor="@color/texto"
+                        android:textSize="19sp" android:textStyle="bold" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Resuelve tus dudas por WhatsApp. Debes tener WhatsApp instalado en tu celular." android:textColor="@color/texto_suave" android:textSize="14sp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="›" android:textColor="@color/dorado" android:textSize="30sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardClases"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="14dp"
+            android:clickable="true" android:focusable="true"
+            app:cardBackgroundColor="@color/tarjeta" app:cardCornerRadius="20dp" app:cardElevation="5dp"
+            app:strokeColor="#2A4580" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🎥" android:textSize="34sp" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Clases virtuales" android:textColor="@color/texto"
+                        android:textSize="19sp" android:textStyle="bold" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Lunes, martes y jueves. Debes tener Google Meet instalado en tu celular." android:textColor="@color/texto_suave" android:textSize="14sp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="›" android:textColor="@color/dorado" android:textSize="30sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView android:id="@+id/tvContacto"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" android:paddingStart="24dp" android:paddingEnd="24dp"
+            android:text="CONTACTO Y UBICACIÓN"
+            android:textColor="@color/dorado" android:textSize="13sp" android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardInfo"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/tarjeta" app:cardCornerRadius="20dp" app:cardElevation="4dp"
+            app:strokeColor="#2A4580" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout android:id="@+id/rowTel"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical" android:padding="18dp"
+                    android:clickable="true" android:focusable="true"
+                    android:background="?attr/selectableItemBackground">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📞" android:textSize="28sp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Teléfono de contacto" android:textColor="@color/dorado"
+                            android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="+52 442 880 7888" android:textColor="@color/texto"
+                            android:textSize="18sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Toca para llamar" android:textColor="@color/texto_suave"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:layout_marginStart="18dp" android:layout_marginEnd="18dp"
+                    android:background="#2A4580" />
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical" android:padding="18dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📍" android:textSize="28sp" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Dirección" android:textColor="@color/dorado"
+                            android:textSize="12sp" android:textStyle="bold" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="Km 15 Carretera Querétaro–Huimilpan, comunidad La Mesita, Huimilpan, Querétaro, México"
+                            android:textColor="@color/texto" android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardMapa"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="14dp"
+            android:clickable="true" android:focusable="true"
+            app:cardBackgroundColor="@color/azul" app:cardCornerRadius="20dp" app:cardElevation="5dp"
+            app:strokeColor="#2A4580" app:strokeWidth="0dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🗺️" android:textSize="34sp" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Cómo llegar" android:textColor="@color/texto"
+                        android:textSize="19sp" android:textStyle="bold" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Abrir la ruta en Google Maps" android:textColor="#D6E2FF" android:textSize="14sp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="›" android:textColor="@color/texto" android:textSize="30sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView android:id="@+id/tvGaleria"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" android:paddingStart="24dp" android:paddingEnd="24dp"
+            android:text="CONOCE EL OBSERVATORIO"
+            android:textColor="@color/dorado" android:textSize="13sp" android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardFoto"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp" app:cardElevation="4dp" app:cardBackgroundColor="@color/tarjeta">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="220dp">
+                <androidx.viewpager2.widget.ViewPager2 android:id="@+id/pager"
+                    android:layout_width="match_parent" android:layout_height="match_parent" />
+                <LinearLayout android:id="@+id/puntos"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="10dp" android:orientation="horizontal" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView android:id="@+id/tvFooter"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:gravity="center"
+            android:text="© Observatorio Astronómico Ilalux"
+            android:textColor="@color/texto_suave" android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
